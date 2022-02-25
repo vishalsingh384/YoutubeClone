@@ -1,0 +1,226 @@
+*{
+list-style: none;
+padding:0;
+margin:0;
+font-family: Roboto, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: black;
+  }
+.navbar{
+    margin-top:0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    max-width: 100%;
+}
+.navbar>nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .left_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .left_nav li,a{
+    margin-left: 0.2em;
+    padding-left: 0.9em;
+}
+.navbar .search-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    width:50vw;
+    margin:0px;
+    padding:0px;
+    align-items: center;
+}
+.navbar .search-bar .search-main{
+    display: flex;
+    justify-content: space-between;
+    border: 0.01px solid rgb(201, 201, 201);
+    border-radius: 0.150em;
+    align-items: center;
+    width:50em;
+    margin:0px;
+    padding:0px;
+    height: 100%;
+}
+.navbar .search-bar .search-main .search-dis{
+    width:91%;
+}
+.navbar .search-bar .search-main .search-icon{
+    border: 0.01px solid rgb(201, 201, 201);
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.150em;
+    width:9%;
+    height: 100%;
+    margin-right: -0.09em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img[src="icons/search_black_24dp.svg"]{
+    height: 70%;
+}
+.navbar .search-bar .mic{
+    height: inherit;
+    width: 3.5em;
+    border-radius: 50%;
+    margin-left: 1em;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .right_nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar .right_nav li{
+    margin-right: 0.5em;
+    padding-right: 0.7em;
+}
+img[src="images and logos/pp.jpg"]{
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+}
+img[src="images and logos/logo (1).png"]{
+    height:1.5em;
+}
+hr.nav-underline{
+    max-width:80%;
+    opacity: 0.2;
+    margin-top: 0.5em;
+    margin-left: 20%;
+}
+.container{
+    display: flex;
+}
+/* --------------------------------Sidebar----------------------------- */
+.container .sidebar{
+    width: 19%;
+}
+.container .sidebar ul{
+    max-width: 100%;
+}
+.container .sidebar ul li{
+    height: 2.65rem;
+}
+.container .sidebar ul li a{
+    padding-left: 2.5em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.container .sidebar ul li a:hover{
+    background-color: rgb(245, 245, 245);
+}
+.container .sidebar ul li a img{
+    margin-right: 1.5em;
+}
+.container .sidebar .subscriptions #sub-header{
+    display: flex;
+    align-items: center;
+    font-size: 0.92em;
+    font-weight: 600;
+    padding-left: 2.5rem;
+    padding-top: -1em;
+    color: rgb(131, 131, 131);
+}
+.container .sidebar .subscriptions li img{
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+}
+.container .sidebar hr{
+    max-width: 90%;
+    opacity: 0.2;
+}
+/*-----------------------------under nav-bar---------------------  */
+.container .main-container{
+    width: 80%;
+    margin-left: 1%;
+    height: max-content;
+}
+.container .main-container .topics{
+    margin-top: 0.4em;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+.container .main-container .topics ul li{
+    border: 0.5px solid rgb(225, 225, 225);
+    border-radius: 16px;
+    background-color: rgb(245, 245, 245);
+    padding: 7px 14px;
+    font-size: 14px;
+    margin-left: 0.6em;
+}
+.container .main-container .topics ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* --------------------------Main-container---------------------------- */
+.container .main-container .main-content{
+    height: 35rem;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    padding-right: 0.6em;
+    padding-left: 0.7em;
+    background-color: rgb(245, 245, 245);
+    border-top: 0.01px solid rgb(230, 230, 230);
+}
+.container .main-container .main-content ul{
+    width: 25%;
+    padding-right: 0.5em;
+    padding-left: 0.1em;
+}
+.main-container .main-content ul li{
+    margin-top: 1em;
+    height: 50%;
+}
+.main-container .main-content ul li .thumbnail-content{
+    height: 50%;
+}
+.main-container .main-content ul li .thumbnail-content img{
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+.main-container .main-content ul li .title_and_info{
+    display: flex;
+}
+.main-container .main-content ul li .title_and_info .dp{
+    display: flex;
+    align-items: flex-start;
+}
+.main-container .main-content ul li .title_and_info .dp img{
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 50%;
+}
+.main-content .title_and_info{
+    margin-top: 0.6rem;
+    padding:0px 5px 0px 0px;
+}
+.main-content .title_and_info .stuff{
+    padding-left: 1em;
+}
+.main-content .title_and_info .stuff .title{
+    padding-bottom:0.3rem;
+}
+.main-content .title_and_info .channel-name{
+    padding-bottom: 0.08rem;
+}
